@@ -16,5 +16,5 @@ Página sencilla que utiliza AJAX que muestra las comunidades autónomas, provin
 8) Crear la tabla de municipios importando el fichero municipios.sql.</br>
 9) Acceder a la URL http://localhost/JavaScript-AJAX/index.html</br></br>
 
-<h4>Descripción</h4></br>
+<h4>Descripción</h4>
 Página que contiene tres selectores: Comunidades, Provincias y Municipios. Con AJAX, cuando se carga la página, se esconden los selectores de Provincias y Municipios y se realiza una consulta con el método GET al fichero consultaCOM.php. A su vez se realiza una consulta SQL a la base de datos de espana, a la tabla comunidades. Una vez obtenidas, se devuelven en formato JSON y son insertados en el selector para ser mostrado. Una vez se selecciona una comunidad autónoma, se activa el selector de Provincias. Nuevamente se realiza una consulta a la base de datos de las provincias que pertenecen a dicha comunidad autónoma. Finalmente, una vez seleccionada una provincia, se realiza una consulta SQL para mostrar los municipios pertenecientes a dicha provincia.
